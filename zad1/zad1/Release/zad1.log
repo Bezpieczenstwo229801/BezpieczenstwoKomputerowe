@@ -1,0 +1,14 @@
+﻿  main.cpp
+main.cpp(41): warning C4018: '<': signed/unsigned mismatch
+main.cpp(42): warning C4244: 'argument': conversion from 'unsigned long' to 'char', possible loss of data
+main.cpp(46): warning C4018: '>': signed/unsigned mismatch
+main.cpp(60): warning C4018: '>': signed/unsigned mismatch
+main.cpp(78): warning C4018: '<': signed/unsigned mismatch
+main.cpp(94): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  1 of 390 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  zad1.vcxproj -> D:\Bezpieczenstwo komputerowe\zad1\Release\zad1.exe
+  zad1.vcxproj -> D:\Bezpieczenstwo komputerowe\zad1\Release\zad1.pdb (Full PDB)

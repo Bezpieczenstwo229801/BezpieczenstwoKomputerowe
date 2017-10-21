@@ -1,0 +1,9 @@
+﻿  main.cpp
+d:\bezpieczenstwo komputerowe\zad1\zad1\main.cpp(29): warning C4018: '<': signed/unsigned mismatch
+d:\bezpieczenstwo komputerowe\zad1\zad1\main.cpp(30): warning C4244: 'argument': conversion from 'unsigned long' to 'char', possible loss of data
+d:\bezpieczenstwo komputerowe\zad1\zad1\main.cpp(34): warning C4018: '<': signed/unsigned mismatch
+d:\bezpieczenstwo komputerowe\zad1\zad1\main.cpp(47): warning C4305: '=': truncation from 'int' to 'char'
+d:\bezpieczenstwo komputerowe\zad1\zad1\main.cpp(47): warning C4309: '=': truncation of constant value
+d:\bezpieczenstwo komputerowe\zad1\zad1\main.cpp(58): warning C4018: '<': signed/unsigned mismatch
+  zad1.vcxproj -> D:\Bezpieczenstwo komputerowe\zad1\Debug\zad1.exe
+  zad1.vcxproj -> D:\Bezpieczenstwo komputerowe\zad1\Debug\zad1.pdb (Full PDB)
