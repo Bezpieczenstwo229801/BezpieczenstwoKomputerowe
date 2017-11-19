@@ -1,0 +1,169 @@
+body
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+html, body
+{
+	height: 100%
+}
+
+#name
+{
+	color: #ffffff;
+	font-size: 100px;
+	font-family: Agency FB;
+}
+
+#subname
+{
+	color: #ccddee;
+	font-size: 60px;
+	font-family: Agency FB;
+}
+
+button
+{
+	color: #ffffff;
+	font-size: 25px;
+	font-family: Agency FB;
+	background-color: #446688;
+	padding: 5px 10px 5px 10px;
+	border: none;
+}
+
+button:hover
+{
+	background-color: #223344;
+}
+
+table
+{
+	padding-bottom: 30px;
+}
+
+table input
+{
+	height: 20px;
+	font-family: Agency FB;
+	font-size: 20px;
+}
+
+table tr td
+{
+	vertical-align: center;
+	padding: 0 8px 0 8px;
+}
+
+
+
+#not_ok
+{
+	height: 30px;
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+#login_frame
+{
+	width: 500px;
+	margin: auto;
+	margin-top: 70px;
+	padding: 80px;
+	border: 2px solid black;
+	text-align: center;
+	background: #ffffff;
+	font-family: Agency FB;
+	font-size: 30px;
+}
+
+
+
+#main
+{
+	font-family: Agency FB;
+	font-size: 30px;
+	background: #ffffff;
+	border-left: 2px solid black;
+	text-align: center;
+	width: 600px;
+	float: right;
+	height: 100%;
+}
+
+#main input
+{
+	width: 300px;
+}
+
+#trans_list
+{
+	border-right: 2px solid black;
+	background: #ffffff;
+	width: 0px;
+	float: left;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: width 2s;
+}
+
+#trans_list_inside
+{
+	font-family: Agency FB;
+	font-size: 30px;
+	text-align: center;
+	width: 400px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+#show_button
+{
+	color: #000000;
+	font-size: 25px;
+	font-family: Agency FB;
+	background-color: #ffffff;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	border: 2px solid #666666;
+	position: absolute;
+	bottom: 0
+}
+
+#show_button:hover
+{
+	background-color: #bbbbbb;
+}
+
+
+
+#main_2
+{
+	font-family: Agency FB;
+	font-size: 30px;
+	background: #ffffff;
+	border: 2px solid black;
+	text-align: center;
+	width: 500px;
+	position: absolute;
+	padding: 60px 0 60px 0;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+#main_3
+{
+	font-family: Agency FB;
+	font-size: 30px;
+	background: #ffffff;
+	border: 2px solid black;
+	text-align: center;
+	width: 500px;
+	position: absolute;
+	padding: 60px 0 60px 0;
+	margin-top: 350px;
+	margin-left: 100px;
+}

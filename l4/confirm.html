@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Bank</title>
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="processInput()" style="background-image: url('bg.png');">
+
+<script>
+  function processInput()
+  {
+    var parameters = location.search.substring(1).replace(/\+/g, " ").split("&");
+	
+    var temp = parameters[0].split("=");
+	var output = "<u>From:</u> " + unescape(temp[1]) + "<br>"
+    temp = parameters[1].split("=")
+    output += "<u>To:</u> " + unescape(temp[1]) + "<br>";
+	temp = parameters[2].split("=")
+	output += "<u>How much:</u> " + unescape(temp[1]) + "<br>"
+    temp = parameters[3].split("=")
+    output += "<u>Name:</u> " + unescape(temp[1]) + "<br>";
+	temp = parameters[4].split("=")
+	output += "<u>Date:</u> " + unescape(temp[1]) + "<br>";
+	
+	document.getElementById("received").innerHTML = output;
+  }
+  
+  function send()
+  {
+	//window.location.href = "fileupload"
+	window.location.href = location.origin + location.pathname.replace("confirm.html", "fileupload") + location.search
+	//window.location.href = location.origin + location.pathname.replace("confirm", "sent") + location.search
+  }
+</script>
+
+<div id="name" style="position: absolute; margin-left: 130px; margin-top: 560px">Your Bank</div>
+<div id="subname" style="position: absolute; margin-left: 250px; margin-top: 660px">Your Future</div>
+
+<div id="main_2">
+	<div id="received"></div>
+	<button id = "send_button" onclick="send()" style="margin-top: 30px">Confirm</button>
+</div>
+
+</body>
+</html>

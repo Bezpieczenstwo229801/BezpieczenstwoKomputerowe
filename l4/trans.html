@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Bank</title>
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-image: url('bg3.jpg');">
+
+<script>
+	$(document).ready(function(){
+		$('#trans_list_inside').load("database.txt")
+		$.get('account.txt', function(result) {
+			$('#from').val(result);
+		});
+		document.getElementById("date").value = new Date().toDateString()
+	})
+	
+	var shown = false
+	function show()
+	{
+		document.getElementById("trans_list").style.width = shown ? "0" : "400px"
+		document.getElementById("show_button").innerHTML = shown ? "Show old transactions &Gt;" : "&Lt; Hide old transactions"
+		document.getElementById("trans_list_inside").innerHTML = document.getElementById("trans_list_inside").innerHTML.replace(/\n/g, "<br>")
+		shown = !shown
+	}
+</script>
+
+<div id="trans_list">
+	<div id="trans_list_inside"></div>
+</div>
+
+<div style="float: left; height: 100%">
+	<div id="name" style="margin-left: 10px;">Your Bank</div>
+	<div id="subname" style="margin-left: 130px;">Your Future</div>
+	<button  id="show_button" onclick="show()">Show old transactions &Gt;</button>
+</div>
+
+<div id="main">
+	<center><form action = "confirm.html" style="margin-top: 70px">
+		<table>
+			<tr><td>From:</td><td><input type="text" id="from" name="from_input"></td></tr>
+			<tr><td>To:</td><td><input type="text" name="to_input"></td></tr>
+			<tr><td>How much:</td><td><input type="text" name="how_much_input"></td></tr>
+			<tr><td>Name of transaction:</td><td><input type="text" name="name_input"></td></tr>
+			<tr><td>Date:</td><td><input type="text" id = "date" name="date_input"></td></tr>
+		</table>
+		<button type="submit">Do it</button>
+	</form></center>
+</div>
+
+</body>
+</html>

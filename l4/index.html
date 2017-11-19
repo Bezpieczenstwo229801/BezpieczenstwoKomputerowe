@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Bank</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-image: url('bg.jpg');">
+
+<script>
+function enter()
+{
+	if (document.getElementById("login_input").value == "abc" && document.getElementById("password_input").value == "123")
+		window.location.href = 'trans.html';
+	else
+		document.getElementById("not_ok").innerHTML = "Not cool, man"
+}
+</script>
+
+<div id="name" style="text-align: right; margin-right: 120px;">
+	Your Bank
+</div>
+<div id="subname" style="text-align: right; margin-right: 30px;">
+	Your Future
+</div>
+<div id="login_frame">
+	<div id="not_ok"></div>
+	<center>
+	<table id = "login_table">
+		<tr>
+			<td>Login:</td><td><input type="text" id="login_input"></td>
+		</tr>
+		<tr>
+			<td>Password:</td><td><input type="password" id="password_input"></td>
+		</tr>
+	</table>
+	</center>
+	<button onclick="enter()">Log in</button>
+
+</div>
+
+</body>
+</html>

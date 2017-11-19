@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Bank</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="processInput()" style="background-image: url('bg2.jpg');">
+
+<script>
+  function processInput()
+  {
+    var parameters = location.search.substring(1).replace(/\+/g, " ").split("&");
+	
+    var temp = parameters[0].split("=");
+	var output = "<b>Got it!</b><br>From: " + unescape(temp[1]) + "<br>"
+    temp = parameters[1].split("=")
+    output += "To: " + unescape(temp[1]) + "<br>";
+	temp = parameters[2].split("=")
+	output += "How much: " + unescape(temp[1]) + "<br>"
+    temp = parameters[3].split("=")
+    output += "Name: " + unescape(temp[1]) + "<br>";
+	temp = parameters[4].split("=")
+	output += "Date: " + unescape(temp[1]) + "<br>";
+	
+	document.getElementById("received").innerHTML = output;
+  }
+ 
+</script>
+
+<div id="name" style="position: absolute; margin-top: 20px; margin-left: 1280px;">Your Bank</div>
+<div id="subname" style="position: absolute; margin-top: 120px; margin-left: 1400px;">Your Future</div>
+
+<div id="main_3">
+	<div id="received"></div>
+	<a href="trans.html"><button style="margin-top: 30px">Back</button></a>
+</div>
+</body>
+</html>
